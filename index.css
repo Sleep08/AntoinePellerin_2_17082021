@@ -189,7 +189,8 @@ nav a {
 
 #titre_deux{
     font-size: 1.1em;
-    height: 10%;
+    padding-left: 30px;
+    padding-top: 5px;
 }
 
 .contenant_hotels{
@@ -198,20 +199,26 @@ nav a {
     height: 80%;
     width: 100%;
     margin: auto;
+    padding-left: 10px;
 }
 
 .heberg{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border: 1px #d9d9d9 solid;
     border-radius: 20px;
     width: auto;
     margin: 2%;
+    height: auto;
+    padding-bottom: 10px;
 }
 
 .heberg img{
     width: 210px;
     height: 100px;
     border: 5px white solid;
+    border-bottom: none;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
@@ -219,27 +226,27 @@ nav a {
 .hotel_title, .title_activity, .footer_title{
     color: black;
     font-weight: bold;
-    margin-top: -1px;
     margin-left: 10px;
+    margin-top: 10px;
 }
 
 .tarif_nuit{
     color: black;
     margin-left: 10px;
     font-size: 0.9em;
-    margin-top: -10px;
+    margin-top: -12px;
 }
 
 .afficher{
     font-weight: bold;
     font-size: 0.9em;
     height: 10%;
+    padding-left: 30px;
 }
 
 .stars{
-    padding-left: 10px;
     margin-top: -12px;
-    margin-bottom: 10px;
+    padding-left: 10px;
 }
 
 .fa-star{
@@ -261,9 +268,6 @@ nav a {
 /*POPULAIRES*/
 
 #conteneur_populaire{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
     width: 30%;
@@ -273,20 +277,21 @@ nav a {
 .conteneur_titre_logo{
     display: flex;
     justify-content: space-between;
-    max-height: 15%;
-    padding-left: 10%;
+    margin: auto;
+    width: 85%;
 }
 
 .logo_populaire{
     position: relative;
-    margin: auto;
+    margin-top: 20px;
 }
 
 .bloc_populaire{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    max-height: 90%;
+    height: 80%;
+    margin-bottom: 15px;
 }
 
 .bloc_hotel{
@@ -316,6 +321,7 @@ nav a {
 .stars_populaire{
     padding-left: 10px;
     margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 .hotel_text a{
