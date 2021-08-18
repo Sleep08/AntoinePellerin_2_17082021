@@ -18,6 +18,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    max-width: 90%;
+    margin: auto;
 }
 
 #logo_reservia img {
@@ -175,37 +177,35 @@ nav a {
 .main_conteneur{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 #conteneur_hebergement{
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-left: 35px;
-    width: 750px;
+    max-width: 65%;
+    height: 100%;
 }
 
-h2{
+#titre_deux{
     font-size: 1.1em;
-    padding-top: 20px;
-    margin-bottom: -2px;
-    margin-left: -1px;
+    height: 10%;
 }
 
 .contenant_hotels{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 750px;
-    padding-left: 10px;
+    height: 80%;
+    width: 100%;
+    margin: auto;
 }
 
 .heberg{
     background-color: white;
     border: 1px #d9d9d9 solid;
     border-radius: 20px;
-    width: 220px;
-    margin-left: -15px;
+    width: auto;
+    margin: 2%;
 }
 
 .heberg img{
@@ -233,6 +233,7 @@ h2{
 .afficher{
     font-weight: bold;
     font-size: 0.9em;
+    height: 10%;
 }
 
 .stars{
@@ -260,39 +261,43 @@ h2{
 /*POPULAIRES*/
 
 #conteneur_populaire{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    padding-left: 35px;
-    width: 330px;
+    width: 30%;
+    height: auto;
 }
 
 .conteneur_titre_logo{
     display: flex;
     justify-content: space-between;
-}
-
-.titre_trois{
-    padding-top: 20px;
+    max-height: 15%;
+    padding-left: 10%;
 }
 
 .logo_populaire{
-    margin-right: 35px;
-    margin-top: 45px;
+    position: relative;
+    margin: auto;
 }
 
 .bloc_populaire{
-    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: 90%;
 }
 
 .bloc_hotel{
     display: flex;
     justify-content: flex-start;
-    width: 300px;
-    height: 130px;
+    margin: auto;
+    width: 85%;
+    height: 30%;
     border: 1px solid white;
     background-color: white;
     border-radius: 15px;
-    margin-top: 20px;
     border: 1px #d9d9d9 solid;
 }
 
@@ -326,23 +331,27 @@ h2{
 }
 
 .conteneur_activites{
-    width: 98%;
+    width: 100%;
     max-height: 350px;
     display: flex;
     justify-content: space-between;
-    margin-left: -30px;
+}
+
+.colonne{
+    width: 22%;
 }
 
 .conteneur_activites img{
-    width: 250px;
+    width: 100%;
     border-radius: 15px 15px 0px 0px;
     object-fit: cover;
 }
 
 .activite{
     border: 1px solid #d9d9d9;
+    background-color: white;
     border-radius: 15px;
-    margin-right: -50px;
+    width: 100%;
 }
 
 .activite a{
