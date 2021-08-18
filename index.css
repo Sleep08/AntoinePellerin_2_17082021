@@ -4,7 +4,7 @@ body{
 }
 
 #contenant_page {
-    max-width: 90%;
+    width: 90%;
     margin: auto;
 }
 
@@ -100,6 +100,7 @@ nav a {
 
 #filters_contain {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     font-weight: bold;
 }
@@ -183,7 +184,7 @@ nav a {
 #conteneur_hebergement{
     background-color: #F2F2F2;
     border-radius: 20px;
-    max-width: 65%;
+    width: 65%;
     height: 100%;
 }
 
@@ -338,7 +339,6 @@ nav a {
 
 .conteneur_activites{
     width: 100%;
-    max-height: 350px;
     display: flex;
     justify-content: space-between;
 }
@@ -366,11 +366,11 @@ nav a {
 }
 
 .vieux_port, .parc_calanques{
-    height: 100%;
+    height: 450px;
 }
 
 .fort_pomegues{
-    height: 40%;
+    height: 200px;
 }
 
 .activitefrioul{
@@ -378,7 +378,7 @@ nav a {
 }
 
 .ile_frioul{
-    height: 30%;
+    height: 150px;
 }
 
 .colonne_deux{
@@ -386,11 +386,11 @@ nav a {
 }
 
 .notre_dame{
-    height: 35%;
+    height: 180px;
 }
 
 .parc_longchamp{
-    height: 32%;
+    height: 160px;
 }
 
 .parclongchamp{
@@ -475,5 +475,80 @@ nav a:hover{
 
 @media screen and (max-width: 1024px)
 {
+    #contenant_page {
+        width: 100%;
+        margin: auto;
+    }
+
+    #filters_contain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_conteneur{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    /*HEBERGEMENT IPHONE 8*/
+
+    #titre_deux{
+        font-size: 2em;
+        padding-left: 30px;
+        padding-top: 5px;
+    }
+
+    .main_conteneur{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
     
+    #conteneur_hebergement{
+        background-color: white;
+        border-radius: 0px;
+        width: 100%;
+    }
+    
+    .contenant_hotels{
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        width: 100%;
+    }
+    
+    .heberg{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .heberg img{
+        width: auto;
+        height: 250px;
+    }
+
+    /*HEBERGEMENTS POPULAIRES*/
+
+    #conteneur_populaire{
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        height: auto;
+    }
+
+    /*ACTIVITES*/
+
+    .conteneur_activites{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .colonne{
+        width: 100%;
+    }
+
+    .conteneur_activites img{
+        height: 250px;
+    }
 }
