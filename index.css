@@ -540,6 +540,38 @@ nav a:hover{
         padding-left: 100px;
     }
 
+    /*BARRE RECHERCHE*/
+
+    .barre_recherche {
+        height: 75px;
+        width: 100%;
+    }
+    
+    .recherche {
+        width: 70%;
+        font-size: 1.8em;
+    }
+    
+    #bouton_recherche {
+        initial-value: none;
+        display: flex;
+        width: 15%;
+        border: none;
+        background-color: #0065FC;
+        color: white;
+        border-radius: 0px 10px 10px 0px;
+        justify-content: center;
+    }
+    
+    .location {
+        width: 15%;
+        padding-top: 22px;
+    }
+
+    .fa-map-marker-alt{
+        font-size: 1.8em;
+    }
+
     /*HEBERGEMENT IPHONE 8*/
 
     #titre_deux{
