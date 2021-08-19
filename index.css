@@ -486,8 +486,17 @@ nav a:hover{
 
     /*RECHERCHE*/
 
+    #titre_un{
+        font-size: 3em;
+    }
+
+    .normal_text{
+        font-size: 1.1em;
+    }
+
     #champ_recherche{
-        width: 80%;
+        width: 90%;
+        margin: auto;
     }
 
     /*FILTRES*/
@@ -503,10 +512,18 @@ nav a:hover{
         flex-direction: column-reverse;
     }
 
+    .title_filtres{
+        font-size: 2.5em;
+    }
+
+    .ensemble_filtre{
+        font-size: 2.5em;
+    }
+
     /*HEBERGEMENT IPHONE 8*/
 
     #titre_deux{
-        font-size: 2em;
+        font-size: 3em;
         padding-left: 30px;
         padding-top: 5px;
     }
@@ -534,7 +551,8 @@ nav a:hover{
         display: flex;
         flex-direction: column;
         background-color: white;
-        margin: 0%;
+        margin: auto;
+        width: 90%;
     }
 
     .heberg img{
@@ -542,7 +560,20 @@ nav a:hover{
         height: 210px;
     }
 
+    .tarif_nuit{
+        font-size: 1.8em;
+    }
+
+    .fa-star{
+        font-size: 1.8em;
+        margin-right: 3%;
+    }
+
     /*HEBERGEMENTS POPULAIRES*/
+
+    .hotel_title, .title_activity, .footer_title{
+        font-size: 2em;
+    }
 
     #conteneur_populaire{
         width: 100%;
@@ -554,8 +585,31 @@ nav a:hover{
     .bloc_hotel{
         display: flex;
         justify-content: flex-start;
-        width: 95%;
-        height: auto;
+        width: 90%;
+        height: 210px;
+    }
+
+    .hotel_text{
+        width: 100%;
+        padding-top: 8px;
+    }
+
+    .titre_trois{
+        font-size: 3em;
+    }
+
+    .conteneur_titre_logo{
+        margin: auto;
+        width: 92%;
+    }
+
+    .bloc_hotel img{
+        width: 40%;
+    }
+
+    .stars_populaire{
+        margin-top: 25px;
+        margin-bottom: 15px;
     }
 
     /*ACTIVITES*/
@@ -566,7 +620,8 @@ nav a:hover{
     }
 
     .colonne{
-        width: 100%;
+        margin: auto;
+        width: 90%;
     }
 
     .conteneur_activites img{
@@ -574,7 +629,8 @@ nav a:hover{
     }
 
     #titre_quatre{
-        font-size: 2em;
+        font-size: 3em;
+        margin-left: 30px;
     }
 
     /*FOOTER*/
