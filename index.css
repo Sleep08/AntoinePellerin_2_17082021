@@ -521,7 +521,23 @@ nav a:hover{
     }
 
     .ensemble_filtre{
-        font-size: 2.5em;
+        font-size: 2em;
+    }
+
+    .fa-heart, .fa-dog, .fa-child, .fa-money-bill{
+        margin-top: 20px;
+    }
+
+    .filter_icon{
+        width: 80px;
+        height: 80px;
+        margin-top: 32px;
+    }
+
+    .filter_selection p{
+        border-radius: 40px;
+        padding: 20px;
+        padding-left: 100px;
     }
 
     /*HEBERGEMENT IPHONE 8*/
@@ -591,6 +607,7 @@ nav a:hover{
         justify-content: flex-start;
         width: 90%;
         height: 210px;
+        margin: auto;
     }
 
     .hotel_text{
@@ -614,6 +631,10 @@ nav a:hover{
     .stars_populaire{
         margin-top: 25px;
         margin-bottom: 15px;
+    }
+
+    .stars_populaire .fa-star{
+        margin-left: 10px;
     }
 
     /*ACTIVITES*/
