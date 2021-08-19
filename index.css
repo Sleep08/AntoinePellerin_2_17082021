@@ -481,7 +481,11 @@ nav a:hover{
     }
 
     header{
-        width: 100%;
+        width: 90%;
+    }
+
+    #logo_reservia img {
+        width: 250px;
     }
 
     /*RECHERCHE*/
