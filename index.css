@@ -85,6 +85,10 @@ nav a {
     justify-content: center;
 }
 
+.fa-search{
+    opacity: 0;
+}
+
 .location {
     display: inline-block;
     position: relative;
@@ -482,6 +486,11 @@ nav a:hover{
 
     header{
         width: 90%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
     }
 
     #logo_reservia img {
@@ -496,32 +505,47 @@ nav a:hover{
     }
 
     nav ul{
-        flex-wrap: wrap-reverse;
-        justify-content: flex-end;
+        margin-top: 100px;
+        width: 100%;
+        align-items: center;
     }
 
     .inscription{
-        position: relative;
+        right: 10px;
+        position: absolute;
+        right: 30;
+        position: absolute;
+        top: 50px;
     }
 
     .hebergement{
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 4px solid #0065FC;
+        width: 50%;
+        text-align: center;
         padding-bottom: 20px;
     }
 
     .activites{
-        border-bottom: 2px solid #0065FC;
+        border-bottom: 4px solid #F2F2F2;
+        font-size: black;
+        width: 50%;
+        text-align: center;
         padding-bottom: 20px;
+        margin-left: 170px;
     }
 
     /*RECHERCHE*/
 
     #titre_un{
-        font-size: 3em;
+        font-size: 3.7em;
     }
 
     .normal_text{
-        font-size: 1.1em;
+        font-size: 1.5em;
+    }
+
+    .legende_titre{
+        font-size: 1em;
     }
 
     #champ_recherche{
@@ -577,7 +601,9 @@ nav a:hover{
     /*BARRE RECHERCHE*/
 
     .barre_recherche {
-        height: 75px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        height: 120px;
         width: 100%;
     }
     
@@ -588,13 +614,23 @@ nav a:hover{
     
     #bouton_recherche {
         initial-value: none;
-        display: flex;
+        font-size: 0px;
         width: 15%;
         border: none;
         background-color: #0065FC;
         color: white;
         border-radius: 20px 20px 20px 20px;
         justify-content: center;
+    }
+
+    .fa-search{
+        display: flex;
+        opacity: 1;
+        position: absolute;
+        font-size: 15px;
+        left: 87.5%;
+        top: 41%;
+        color: red;
     }
     
     .location {
@@ -609,7 +645,7 @@ nav a:hover{
     /*HEBERGEMENT IPHONE 8*/
 
     #titre_deux{
-        font-size: 3em;
+        font-size: 3.5em;
         padding-left: 30px;
         padding-top: 5px;
     }
@@ -639,15 +675,19 @@ nav a:hover{
         background-color: white;
         margin: auto;
         width: 90%;
+        margin-bottom: 35px;
+        border-radius: 50px;
     }
 
     .heberg img{
         width: auto;
-        height: 210px;
+        height: 280px;
+        border-radius: 50px 50px 0px 0px;
+        border: 10px solid white;
     }
 
     .tarif_nuit{
-        font-size: 1.8em;
+        font-size: 2.5em;
     }
 
     .fa-star{
@@ -656,13 +696,13 @@ nav a:hover{
     }
 
     .afficher{
-        font-size: 2em;
+        font-size: 2.8em;
     }
 
     /*HEBERGEMENTS POPULAIRES*/
 
     .hotel_title, .title_activity, .footer_title{
-        font-size: 2em;
+        font-size: 3em;
     }
 
     .logo_populaire{
@@ -682,8 +722,15 @@ nav a:hover{
         display: flex;
         justify-content: flex-start;
         width: 90%;
-        height: 210px;
+        height: 380px;
         margin: auto;
+        margin-bottom: 35px;
+        border-radius: 50px;
+    }
+
+    .bloc_hotel img{
+        border: 10px solid white;
+        border-radius: 50px 0px 0px 50px;
     }
 
     .hotel_text{
@@ -692,7 +739,7 @@ nav a:hover{
     }
 
     .titre_trois{
-        font-size: 3em;
+        font-size: 3.5em;
     }
 
     .conteneur_titre_logo{
@@ -705,32 +752,35 @@ nav a:hover{
     }
 
     .stars_populaire{
-        margin-top: 25px;
+        padding-top: 50px;
         margin-bottom: 15px;
     }
 
     .stars_populaire .fa-star{
-        margin-left: 10px;
+        padding-right: 10px;
     }
 
     /*ACTIVITES*/
 
     .conteneur_activites{
+        margin-left: 25px;
         display: flex;
         flex-direction: column;
+        width: 90%;
     }
 
     .colonne{
         margin: auto;
-        width: 90%;
+        width: 100%;
     }
 
     .conteneur_activites img{
-        height: 210px;
+        height: 280px;
+        border-radius: 50px 50px 0px 0px;
     }
 
     #titre_quatre{
-        font-size: 3em;
+        font-size: 3.5em;
         margin-left: 30px;
     }
 
@@ -741,8 +791,58 @@ nav a:hover{
         height: auto;
     }
 
+    .bloc_footer{
+        margin-top: 50px;
+        margin-left: 70px;
+        width: 90%;
+    }
+
     .bloc_footer li{
         font-size: 1.5em;
+        padding-top: 15px;
+    }
+
+    /* HOVER IPHONE */
+
+    figure{
+        -webkit-transition: all 0s ease; /* Safari et Chrome */
+        -moz-transition: all 0s ease; /* Firefox */
+        -ms-transition: all 0s ease; /* Internet Explorer 9 */
+        -o-transition: all 0s ease; /* Opera */
+        transition: all 0s ease;
+    }
+    
+    figure:hover{
+        -webkit-transform:scale(1); /* Safari et Chrome */
+        -moz-transform:scale(1); /* Firefox */
+        -ms-transform:scale(1); /* Internet Explorer 9 */
+        -o-transform:scale(1); /* Opera */
+        transform:scale(1);
+    }
+    
+    .bloc_hotel{
+        -webkit-transition: all 0s ease; /* Safari et Chrome */
+        -moz-transition: all 0s ease; /* Firefox */
+        -ms-transition: all 0s ease; /* Internet Explorer 9 */
+        -o-transition: all 0s ease; /* Opera */
+        transition: all 0s ease;    
+    }
+    
+    .bloc_hotel:hover{
+        -webkit-transform:scale(1); /* Safari et Chrome */
+        -moz-transform:scale(1); /* Firefox */
+        -ms-transform:scale(1); /* Internet Explorer 9 */
+        -o-transform:scale(1); /* Opera */
+        transform:scale(1);
+    }
+    
+    nav a:hover{
+        border-top: 0px;
+        padding-top: 0px;
+    }
+    
+    .filter_selection:hover{
+        opacity: 1;
     }
 
 }
