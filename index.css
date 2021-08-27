@@ -162,10 +162,15 @@ nav a {
 }
 
 .fa-info{
+    font-size: 0.7em;
     color: #0065FC;
+    border-radius: 50px;
+    border: 2px solid #d9d9d9;
+    padding: 5px 8px 5px 8px;
 }
 
 .logo_info{
+    margin-top: 8px;
     display: inline-block;
     position: relative;
     border: 2px #d9d9d9;
@@ -173,7 +178,6 @@ nav a {
     height: 15px;
     border-radius: 50px;
     position: absolute;
-    margin-top: 15px;
 }
 
 /*SECTION HERBERGEMENT ET POPULAIRE*/
@@ -541,7 +545,8 @@ nav a:hover{
     }
 
     .normal_text{
-        font-size: 1.5em;
+        margin-left: 8%;
+        font-size: 1.3em;
     }
 
     .legende_titre{
@@ -558,7 +563,12 @@ nav a:hover{
     }
 
     .logo_info{
-        margin-top: 35px;
+        margin-top: 60px;
+        font-size: 1.8em;
+    }
+
+    .fa-info{
+        border: none;
     }
 
     /*FILTRES*/
@@ -575,11 +585,11 @@ nav a:hover{
     }
 
     .title_filtres{
-        font-size: 2.5em;
+        font-size: 3em;
     }
 
     .ensemble_filtre{
-        font-size: 2em;
+        font-size: 2.5em;
     }
 
     .fa-heart, .fa-dog, .fa-child, .fa-money-bill{
@@ -587,15 +597,15 @@ nav a:hover{
     }
 
     .filter_icon{
-        width: 80px;
-        height: 80px;
-        margin-top: 32px;
+        width: 90px;
+        height: 90px;
+        margin-top: 42px;
     }
 
     .filter_selection p{
         border-radius: 40px;
         padding: 20px;
-        padding-left: 100px;
+        padding-left: 125px;
     }
 
     /*BARRE RECHERCHE*/
@@ -609,7 +619,8 @@ nav a:hover{
     
     .recherche {
         width: 70%;
-        font-size: 1.8em;
+        font-size: 2.5em;
+        font-weight: bold;
     }
     
     #bouton_recherche {
@@ -627,15 +638,17 @@ nav a:hover{
         display: flex;
         opacity: 1;
         position: absolute;
-        font-size: 15px;
-        left: 87.5%;
-        top: 41%;
-        color: red;
+        font-size: 2em;
+        right: 9.7%;
+        top: 41.2%;
+        color: white;
     }
     
     .location {
+        font-size: 2em;
         width: 15%;
-        padding-top: 22px;
+        padding-top: 25px;
+        border-radius: 25px 0px 0px 25px;
     }
 
     .fa-map-marker-alt{
@@ -697,6 +710,14 @@ nav a:hover{
 
     .afficher{
         font-size: 2.8em;
+    }
+
+    .stars{
+        margin-bottom: 15px;
+    }
+
+    .legende_heberg{
+        margin-left: 25px;
     }
 
     /*HEBERGEMENTS POPULAIRES*/
@@ -782,6 +803,15 @@ nav a:hover{
     #titre_quatre{
         font-size: 3.5em;
         margin-left: 30px;
+    }
+
+    .activite{
+        border-radius: 50px;
+    }
+
+    .title_activity{
+        font-size: 2.5em;
+        margin-left: 40px;
     }
 
     /*FOOTER*/
