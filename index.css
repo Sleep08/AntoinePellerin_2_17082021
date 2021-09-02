@@ -162,7 +162,6 @@ nav a {
 }
 
 .fa-info{
-    font-size: 0.7em;
     color: #0065FC;
     border-radius: 50px;
     border: 2px solid #d9d9d9;
@@ -171,13 +170,9 @@ nav a {
 
 .logo_info{
     margin-top: 8px;
-    display: inline-block;
-    position: relative;
-    border: 2px #d9d9d9;
-    width: 15px;
-    height: 15px;
-    border-radius: 50px;
     position: absolute;
+    border-radius: 50px;
+    font-size: 0.7em;
 }
 
 /*SECTION HERBERGEMENT ET POPULAIRE*/
@@ -231,7 +226,7 @@ nav a {
     object-fit: cover;
 }
 
-.hotel_title, .title_activity, .footer_title{
+.hotel_title, .footer_title{
     color: black;
     font-weight: bold;
     margin-left: 10px;
@@ -274,6 +269,10 @@ nav a {
 }
 
 /*POPULAIRES*/
+
+.fa-arrow-trend-up{
+    color: red;
+}
 
 #conteneur_populaire{
     background-color: #F2F2F2;
@@ -345,6 +344,7 @@ nav a {
 }
 
 .conteneur_activites{
+    margin-left: -30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -404,6 +404,12 @@ nav a {
     margin-top: 59px;
 }
 
+.title_activity{
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 25px;
+}
+
 /*FOOTER*/
 
 .contain_footer{
@@ -411,7 +417,7 @@ nav a {
     justify-content: flex-start;
     height: 250px;
     background-color: #F2F2F2;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .bloc_footer{
@@ -488,7 +494,8 @@ nav a:hover{
     }
 
     header{
-        width: 100%;
+        margin-top: 50px;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -532,7 +539,6 @@ nav a:hover{
         width: 50%;
         text-align: center;
         padding-bottom: 20px;
-        padding-left: 15px;
     }
 
     .activites{
@@ -550,8 +556,8 @@ nav a:hover{
     }
 
     .normal_text{
-        margin-left: 8%;
-        font-size: 1.3em;
+        font-size: 1.6em;
+        margin-left: 80px;
     }
 
     .legende_titre{
@@ -565,6 +571,8 @@ nav a:hover{
 
     .info_heberg{
         font-size: 1.8em;
+        width: 100%;
+        padding-bottom: 60px;
     }
 
     .logo_info{
@@ -573,7 +581,10 @@ nav a:hover{
     }
 
     .fa-info{
-        border: none;
+        font-size: 0.7em;
+        border: 4px solid #d9d9d9;
+        padding: 18px 30px 18px 30px;
+        margin-top: -25px;
     }
 
     /*FILTRES*/
@@ -595,26 +606,28 @@ nav a:hover{
     }
 
     .ensemble_filtre{
-        font-size: 2.5em;
+        font-size: 2.8em;
         margin-top: -50px;
+        margin-left: -40px;
     }
 
     .fa-heart, .fa-dog, .fa-child, .fa-money-bill{
-        margin-top: 32px;
-        font-size: 1.5em;
+        margin-top: 40px;
+        font-size: 1.2em;
     }
 
     .filter_icon{
-        width: 130px;
-        height: 130px;
-        margin-top: 42px;
+        width: 142px;
+        height: 142px;
+        margin-top: 40px;
         border-radius: 70px;
     }
 
     .filter_selection p{
-        border-radius: 62px;
-        padding: 40px;
-        padding-left: 150px;
+        border-radius: 67px;
+        padding: 38px;
+        padding-left: 160px;
+        border: 4px solid rgba(128, 128, 128, 0.459);
     }
 
     /*BARRE RECHERCHE*/
@@ -651,9 +664,9 @@ nav a:hover{
         display: flex;
         opacity: 1;
         position: absolute;
+        margin-left: 79%;
+        margin-top: 3.5%;
         font-size: 1em;
-        right: 11%;
-        top: 43.7%;
         color: white;
     }
     
@@ -707,7 +720,7 @@ nav a:hover{
 
     .heberg img{
         width: auto;
-        height: 280px;
+        height: 320px;
         border-radius: 50px 50px 0px 0px;
         border: 10px solid white;
     }
@@ -735,7 +748,7 @@ nav a:hover{
 
     /*HEBERGEMENTS POPULAIRES*/
 
-    .hotel_title, .title_activity, .footer_title{
+    .hotel_title, .footer_title{
         font-size: 3em;
     }
 
@@ -770,6 +783,7 @@ nav a:hover{
     .hotel_text{
         width: 100%;
         padding-top: 8px;
+        padding-left: 25px;
     }
 
     .titre_trois{
@@ -809,7 +823,7 @@ nav a:hover{
     }
 
     .conteneur_activites img{
-        height: 280px;
+        height: 320px;
         border-radius: 50px 50px 0px 0px;
     }
 
@@ -823,8 +837,14 @@ nav a:hover{
     }
 
     .title_activity{
-        font-size: 2.5em;
-        margin-left: 40px;
+        font-weight: bold;
+        margin-left: 50px;
+    }
+
+    .title_activity a{
+        font-weight: bold;
+        margin-left: 50px;
+        font-size: 2.1em;
     }
 
     /*FOOTER*/
@@ -837,7 +857,6 @@ nav a:hover{
     .bloc_footer{
         margin-top: 50px;
         margin-left: 70px;
-        width: 90%;
     }
 
     .bloc_footer li{
