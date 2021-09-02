@@ -73,6 +73,7 @@ nav a {
 .recherche {
     display: flex;
     border: none;
+
 }
 
 #bouton_recherche {
@@ -486,8 +487,7 @@ nav a:hover{
 
 /* MEDIA QUERIES*/
 
-@media screen and (max-width: 1024px)
-{
+@media screen and (max-width: 767px){
     #contenant_page {
         width: 100%;
         margin: auto;
@@ -495,7 +495,7 @@ nav a:hover{
 
     header{
         margin-top: 50px;
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
@@ -528,9 +528,7 @@ nav a:hover{
     }
 
     .inscription{
-        right: 10px;
-        position: absolute;
-        right: 30;
+        right: 50;
         position: absolute;
         top: 50px;
     }
@@ -546,7 +544,7 @@ nav a:hover{
         width: 50%;
         text-align: center;
         padding-bottom: 20px;
-        margin-left: 170px;
+        padding-left: 200px;
     }
 
     /*RECHERCHE*/
@@ -838,13 +836,11 @@ nav a:hover{
 
     .title_activity{
         font-weight: bold;
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     .title_activity a{
-        font-weight: bold;
-        margin-left: 50px;
-        font-size: 2.1em;
+        font-size: 2.2em;
     }
 
     /*FOOTER*/
@@ -852,15 +848,17 @@ nav a:hover{
     .contain_footer{
         flex-direction: column;
         height: auto;
+        width: 100%;
     }
 
     .bloc_footer{
-        margin-top: 50px;
+        margin-top: 75px;
         margin-left: 70px;
+        width: 90%;
     }
 
     .bloc_footer li{
-        font-size: 1.5em;
+        font-size: 1.4em;
         padding-top: 15px;
     }
 
@@ -907,17 +905,4 @@ nav a:hover{
         opacity: 1;
     }
 
-}
-
-@media only screen (min-width: 767px) and (max-width: 1024px) {
-
-    .fa-search{
-        display: flex;
-        opacity: 1;
-        position: absolute;
-        font-size: 2em;
-        right: 9.7%;
-        top: 41.2%;
-        color: red;
-    }
 }
