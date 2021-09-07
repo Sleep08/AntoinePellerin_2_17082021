@@ -96,7 +96,7 @@ nav a {
 }
 
 .fa-search{
-    opacity: 0;
+    visibility: hidden;
 }
 
 .location {
@@ -547,7 +547,7 @@ nav a:hover{
     }
 
     .inscription{
-        right: 50;
+        right: 50px;
         position: absolute;
         top: 50px;
     }
@@ -559,7 +559,6 @@ nav a:hover{
     }
 
     .activites{
-        font-size: black;
         width: 50%;
         text-align: center;
         padding-bottom: 20px;
@@ -667,9 +666,9 @@ nav a:hover{
     
     #bouton_recherche {
         margin-left: -50px;
-        initial-value: none;
-        font-size: 0px;
+        font-size: 0.2em;
         width: 15%;
+        height: auto;
         border: none;
         background-color: #0065FC;
         color: white;
@@ -678,13 +677,13 @@ nav a:hover{
     }
 
     .fa-search{
-        display: flex;
-        opacity: 1;
-        position: absolute;
-        margin-left: 79.5%;
-        margin-top: 3.5%;
+        background-color: #0065FC;
+        visibility: visible;
+        position: relative;
+        margin-left: -90px;
+        margin-top: 4.5%;
         color: white;
-        font-size: 2em;
+        font-size: 3em;
     }
     
     .location {
